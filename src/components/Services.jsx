@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Waves from "./waves";
-import { servicesData } from "@/app/Data/ServicesData";
+import { servicesData } from "@/Data/ServicesData";
 import Image from "next/image";
 
 const Services = () => {
@@ -43,12 +43,25 @@ export const ServiceCard = ({ icon, title, description }) => {
   return (
     <div className="bg-white/90 rounded-2xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center">
       {/* Icon */}
-      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#23a7ae] mb-4 shadow-md">
-        <Image src={icon} alt={title} className="w-8 h-8 object-contain" />
-      </div>
 
+      <div
+        className="w-[100px] h-[100px] flex items-center justify-center rounded-full"
+        style={{ backgroundColor: "rgba(60, 195, 195, 0.1)" }}
+      >
+        <div
+          className="w-[80px] h-[80px] flex items-center justify-center rounded-full "
+          style={{ backgroundColor: "rgba(60, 195, 195, 0.5)" }}
+        >
+          <div
+            className="w-16 h-16 flex items-center justify-center rounded-full"
+            style={{ backgroundColor: "rgba(35, 167, 174, 1)" }}
+          >
+            <Image src={icon} alt={title} className="w-9 h-9 object-contain" />
+          </div>
+        </div>
+      </div>
       {/* Title */}
-      <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
+      <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 mt-5">
         {title}
       </h3>
 

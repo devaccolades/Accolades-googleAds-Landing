@@ -1,5 +1,6 @@
-import google from "../../../public/icons/icons8-google-ads.svg";
-import smm from "../../../public/icons/bullhorn.png";
+import google from "../../public/icons/icons8-google-ads.svg";
+import smm from "../../public/icons/bullhorn.png";
+import seo from "../../public/icons/seo.png";
 export const servicesData = [
   {
     title: "Google Ads",
@@ -17,7 +18,7 @@ export const servicesData = [
     title: "Search Engine Optimization (SEO)",
     description:
       "SEO stands for Search Engine Optimization. It is the process of taking steps to help a website or a piece of content rank higher on Google.",
-    icon: google,
+    icon: seo,
   },
   {
     title: "Content Marketing",
