@@ -1,6 +1,10 @@
 import google from "../../public/icons/icons8-google-ads.svg";
 import smm from "../../public/icons/bullhorn.png";
 import seo from "../../public/icons/seo.png";
+import content from "../../public/icons/content-marketing.png";
+import creative from "../../public/icons/idea.png";
+import brand from "../../public/icons/branding.png";
+import web from "../../public/icons/backend.png";
 export const servicesData = [
   {
     title: "Google Ads",
@@ -24,24 +28,24 @@ export const servicesData = [
     title: "Content Marketing",
     description:
       "Content marketing is a marketing strategy used to attract and engage an audience by creating and sharing relevant articles, videos, blogs and other media.",
-    icon: google,
+    icon: content,
   },
   {
     title: "Creative Designs",
     description:
       "Good creative designs will help you create a strong impression, build a brand identity, convey important information, narrate your story, and build consumer trust.",
-    icon: google,
+    icon: creative,
   },
   {
     title: "Branding",
     description:
       "A strong, consistent brand, built up over time, is the best guarantee we can assure you. Self, definition, transparency, authenticity and accountability are our keys to success. Convey your brand values and make your company more relatable, and translate into more leads, conversions, and sales.",
-    icon: google,
+    icon: brand,
   },
   {
     title: "Web Development / E-Cart",
     description:
       "Accolades is envisioned to cater the newest and finest web development solutions to businesses in Kerala. Web development is the process of building and maintaining a website for the Internet.",
-    icon: google,
+    icon: web,
   },
 ];
