@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Waves from "./waves";
+import Waves from "./Waves";
 import { servicesData } from "@/Data/ServicesData";
 import Image from "next/image";
 
