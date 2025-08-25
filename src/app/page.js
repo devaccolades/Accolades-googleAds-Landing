@@ -1,5 +1,6 @@
 import WhyChooseUs from "@/components/Choose";
 import Choose from "@/components/Choose";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import NowAt from "@/components/NowAt";
 import OurClients from "@/components/OurClients";
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUs />
       <TestimonialsSection />
       <NowAt />
+      <Footer />
     </>
   );
 }
