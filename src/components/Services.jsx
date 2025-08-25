@@ -20,7 +20,7 @@ const Services = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6">
+      <div className="containers mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-poppins text-[24px] md:text-[36px] lg:text-[48px] font-bold text-center ">
             Our Services

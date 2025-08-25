@@ -11,10 +11,12 @@ import img5 from "../../public/herosection/5.jpg";
 import img6 from "../../public/herosection/6.jpg";
 import img7 from "../../public/herosection/7.jpg";
 import chat from "../../public/herosection/chat_bubble.svg";
+import FormModal from "./Form";
 
 const HeroSection = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [screenWidth, setScreenWidth] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const serviceCards = [
     {
@@ -170,15 +172,20 @@ const HeroSection = () => {
           that help businesses stand out, engage audiences, and grow online.
         </p>
         <div className="flex flex-row  gap-2 lg:gap-4 justify-center items-center mt-6">
-          <button className="bg-[#0C5357] hover:bg-[#0C7379] text-white px-2 xl:px-8 py-3 rounded-[10px] transition-colors duration-200 shadow-lg font-poppins font-bold text-[13px] leading-[100%]">
+          <button 
+          onClick={() => setIsModalOpen(true)}
+          className="bg-[#0C5357] hover:bg-[#0C7379] text-white px-2 xl:px-8 py-3 rounded-[10px] transition-colors duration-200 shadow-lg font-poppins font-bold text-[13px] leading-[100%]">
             Book a Free Meeting
           </button>
-          <button className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1] ">
+          <button 
+          className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1] ">
             <Image src={chat} alt="Chat Icon" className="size-[14px]" />
             Whatsapp us
           </button>
         </div>
       </div>
+      {/* Modal Form */}
+      <FormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

@@ -111,7 +111,7 @@ const WhyChooseUs = () => {
       <div className="absolute top-10 right-10 w-6 h-6 border-2 border-white opacity-20 transform rotate-45 animate-spin-slow"></div>
       <div className="absolute bottom-32 left-16 w-8 h-8 border-2 border-white opacity-20 animate-bounce"></div>
       
-      <div ref={sectionRef} className="relative z-10 container mx-auto px-6 py-20">
+      <div ref={sectionRef} className="containers relative z-10 container mx-auto px-6 py-20">
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-8 mb-16">
           <div className="relative">

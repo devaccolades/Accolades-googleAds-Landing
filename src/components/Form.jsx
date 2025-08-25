@@ -78,7 +78,7 @@ const FormModal = ({ isOpen, onClose }) => {
           &times;
         </button>
 
-        <h2 className="text-2xl font-bold text-teal-600 mb-4">Get Started</h2>
+        {/* <h2 className="text-2xl font-bold text-teal-600 mb-4">Get Started</h2> */}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -126,7 +126,7 @@ const FormModal = ({ isOpen, onClose }) => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-              placeholder="Tell us about your project..."
+              placeholder="Your Message"
             ></textarea>
           </div>
           <button
