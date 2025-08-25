@@ -1,5 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import FormModal from './Form';
+
 
 const WhyChooseUs = () => {
   const [counters, setCounters] = useState({
@@ -10,6 +12,7 @@ const WhyChooseUs = () => {
   });
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Intersection Observer to trigger animations when section is visible
   useEffect(() => {
@@ -166,17 +169,21 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Call to Action */}
-          {/* <div className={`mt-12 ${
+          <div className={`mt-12 ${
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`} style={{animationDelay: '1200ms'}}>
-            <button className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button 
+            onClick={() => setIsModalOpen(true)}
+            className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get Started Today
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
 
-      <style jsx>{`
+      <FormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+      <style jsx>{`   
         @keyframes fade-in-up {
           from {
             opacity: 0;
