@@ -20,7 +20,7 @@ export async function POST(req) {
     await transporter.sendMail({
       from: process.env.SMTP_EMAIL,
       to: process.env.RECEIVER_EMAIL,
-      subject: "New Contact Form Submission",
+      subject: "New Enquiry from Accolades Google Ads",
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     });
 
