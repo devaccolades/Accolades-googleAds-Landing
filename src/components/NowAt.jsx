@@ -10,7 +10,7 @@ const NowAt = () => {
     {
       place: "Kochi",
       address:
-        "Accolades Integrated Pvt Ltd | No.32/3071 – B | First Floor Anjiparambil Building | Ponnurunni | NH Bypass | Vyttila | Kochi – 682 019",
+        "Accolades Integrated Pvt Ltd Rahmath Building, 46/2056 - A, AKG Vayanasala Road, Chakkaraparambu, Vennala, Kochi, Ernakulam, Kerala 682028 ",
       mobile: "+91 90486 89977",
       email: "mail@accoladesmedia.co.in",
       map: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d940.1253727708323!2d76.3162912695514!3d9.988720320158786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTknMTkuNCJOIDc2wrAxOScwMS4wIkU!5e1!3m2!1sen!2sin!4v1755942872136!5m2!1sen!2sin",
