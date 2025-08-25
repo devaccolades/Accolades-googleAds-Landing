@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
+import Link from "next/link";
 
 const NowAt = () => {
   const [selected, setSelected] = useState("Kochi");
@@ -94,15 +95,19 @@ const NowAt = () => {
                     <div className="w-fit h-fit p-2.5 bg-[#e0f2f1] rounded-lg">
                       <CiPhone className="text-xl text-[#009689]" />
                     </div>
-                    <p className="text-[#009689]">{details.mobile}</p>
+                    <Link href={`tel:${details.mobile}`}>
+                      <p className="text-[#009689]">{details.mobile}</p>
+                    </Link>
                   </div>
                   <div className="flex items-center p-3 bg-[#f4f9f9] rounded-lg w-full gap-2 mt-2 sm:mt-0">
                     <div className="w-fit h-fit p-2.5 bg-[#e0f2f1] rounded-lg">
                       <CiMail className="text-xl text-[#009689]" />
                     </div>
-                    <p className="text-[13px] md:text-[16px] text-[#009689]">
-                      {details.email}
-                    </p>
+                    <Link href={`mailto:${details.email}`}>
+                      <p className="text-[13px] md:text-[16px] text-[#009689]">
+                        {details.email}
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
