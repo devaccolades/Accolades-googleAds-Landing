@@ -6,7 +6,7 @@ import { FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <section className="max-w-6xl mx-auto py-7 px-5 border-t border-gray-400">
+    <section className="containers py-7 px-5 border-t border-gray-400">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
         <p className="font-normal text-[#546e7a] text-center md:text-left text-sm md:text-base">
           © 2025 By Accolades Integrated
