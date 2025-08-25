@@ -90,14 +90,14 @@ const HeroSection = () => {
       </div>
 
       {/* Cards - Curved Row */}
-      <div className="flex justify-center items-center h-50 xl:h-90 relative">
+      <div className="flex justify-center items-center h-50 md:h-72 lg:h-80 xl:h-90 relative">
         {/* Enquire Now Bubbles - rendered outside cards to avoid clipping */}
         {serviceCards.map(
           (card, i) =>
             hoveredCard === i && (
               <div
                 key={`bubble-${card.id}`}
-                className="absolute -mt-16 xl:-mt-40 px-6 py-[5px] md:py-2 rounded-full text-white text-[13px] font-semibold shadow-xl transition-all duration-300 ease-out pointer-events-none whitespace-nowrap"
+                className="absolute -mt-16 md:-mt-30 lg:-mt-40 px-6 py-[5px] md:py-2 rounded-full text-white text-[13px] font-semibold shadow-xl transition-all duration-300 ease-out pointer-events-none whitespace-nowrap"
                 style={{
                   backgroundColor: card.color,
                   background: card.color,
@@ -126,7 +126,7 @@ const HeroSection = () => {
         {serviceCards.map((card, i) => (
           <div
             key={card.id}
-            className="absolute w-30 h-30 xl:w-52 xl:h-52 rounded-2xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 ease-out"
+            className="absolute w-30 h-30 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-2xl shadow-xl overflow-hidden cursor-pointer transition-all duration-500 ease-out"
             style={{
               transform: getCardTransform(i),
               zIndex: hoveredCard === i ? 100 : serviceCards.length - 1 - i,
