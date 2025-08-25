@@ -110,27 +110,30 @@ const NowAt = () => {
         </div>
         {location
           .filter((item) => item.place === selected)
-          .map((loc) => (
-            <div
-              key={loc.place}
-              className="w-full lg:w-5/12 rounded-2xl flex items-center"
-            >
-              <iframe
-                name="myiFrame"
-                src={loc.map}
-                style={{
-                  borderRadius: "10px",
-                  width: "100%",
-                  minHeight: "300px",
-                  height: "350px",
-                  maxHeight: "450px",
-                }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          ))}
+          .map(
+            (loc) =>
+              loc.map && (
+                <div
+                  key={loc.place}
+                  className="w-full lg:w-5/12 rounded-2xl flex items-center"
+                >
+                  <iframe
+                    name="myiFrame"
+                    src={loc.map}
+                    style={{
+                      borderRadius: "10px",
+                      width: "100%",
+                      minHeight: "300px",
+                      height: "350px",
+                      maxHeight: "450px",
+                    }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              )
+          )}
       </div>
     </section>
   );
