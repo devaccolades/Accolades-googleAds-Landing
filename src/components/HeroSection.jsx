@@ -191,9 +191,19 @@ const HeroSection = () => {
             Book a Free Meeting
           </button>
           <button className="flex gap-2 items-center text-black px-2 xl:px-6 py-2 border rounded-[10px] border-[#E1E1E1] font-poppins font-bold text-[12px] md:text-[13px]">
+          {/* <button 
+          className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1] ">
             <Image src={chat} alt="Chat Icon" className="size-[14px]" />
             Whatsapp us
-          </button>
+          </button> */}
+          <a 
+          href="https://wa.me/919048689977"   
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1]">
+          <Image src={chat} alt="Chat Icon" className="size-[14px]" />
+          Whatsapp us
+        </a>
         </div>
       </div>
 

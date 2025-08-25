@@ -102,14 +102,14 @@ const TestimonialsSection = () => {
       {/* Content */}
       <div className="relative z-10">
         {/* Header with retro styling */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-block">
-            <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-700 via-teal-500 to-gray-800 bg-clip-text text-transparent mb-4 animate-pulse">
+            <h2 className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-gray-700 via-teal-500 to-gray-800 bg-clip-text text-transparent mb-4 animate-pulse">
               CLIENT TESTIMONIALS
             </h2>
             <div className="h-1 w-full bg-gradient-to-r from-cyan-400 via-white to-cyan-500 rounded-full mb-4"></div>
           </div>
-          <p className="text-xl text-gray-600 mt-6 font-light tracking-wide">
+          <p className="text-sm md:text-xl text-gray-600 mt-6 font-light tracking-wide">
             Experience the success stories of our valued partners
           </p>
         </div>
