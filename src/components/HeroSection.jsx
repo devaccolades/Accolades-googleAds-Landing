@@ -177,11 +177,19 @@ const HeroSection = () => {
           className="bg-[#0C5357] hover:bg-[#0C7379] text-white px-2 xl:px-8 py-3 rounded-[10px] transition-colors duration-200 shadow-lg font-poppins font-bold text-[13px] leading-[100%]">
             Book a Free Meeting
           </button>
-          <button 
+          {/* <button 
           className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1] ">
             <Image src={chat} alt="Chat Icon" className="size-[14px]" />
             Whatsapp us
-          </button>
+          </button> */}
+          <a 
+          href="https://wa.me/919048689977"   
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex gap-2 items-center text-black px-2 xl:px-6 py-3 transition-colors duration-200 font-poppins font-bold text-[13px] leading-[100%] border rounded-[10px] border-[#E1E1E1]">
+          <Image src={chat} alt="Chat Icon" className="size-[14px]" />
+          Whatsapp us
+        </a>
         </div>
       </div>
       {/* Modal Form */}
